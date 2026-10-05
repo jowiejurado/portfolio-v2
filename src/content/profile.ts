@@ -1,5 +1,5 @@
 /**
- * Portfolio content, sourced from the CV (Jowie-Jurado-CV.pdf).
+ * Portfolio content, sourced from the CV (public/Jowie-Trence-Jurado-CV.pdf).
  */
 export const profile = {
   name: 'Jowie Trence Jurado',
@@ -20,7 +20,7 @@ export const profile = {
   email: 'juradojowietrence@gmail.com',
   github: 'jowiejurado',
   // résumé link (leave empty to hide)
-  resumeUrl: '/Jowie-Jurado-CV.pdf',
+  resumeUrl: '/Jowie-Trence-Jurado-CV.pdf',
   skills: {
     'PHP & Backend': ['PHP', 'Laravel', 'REST APIs', 'MySQL', 'MariaDB', 'PostgreSQL', 'Node.js'],
     CMS: ['WordPress', 'Drupal', 'FilamentPHP'],
