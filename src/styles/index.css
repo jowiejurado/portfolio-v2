@@ -1,0 +1,360 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "@fontsource-variable/montserrat";
+@import "@fontsource/ubuntu-mono/400.css";
+@import "@fontsource/ubuntu-mono/700.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Yaru (Ubuntu 26.04) tokens.
+ * --brand is the user-selectable accent (Ubuntu orange by default).
+ * shadcn's "accent" keeps its own meaning: the neutral hover fill.
+ */
+:root {
+  --brand: #e95420;
+  --brand-fg: #ffffff;
+
+  --window: #fafafa;
+  --headerbar: #ebebeb;
+  --headerbar-backdrop: #f2f2f2;
+  --view: #ffffff;
+  --sidebar: #ebebeb;
+  --fg: #3d3d3d;
+  --fg-dim: #6b6b6b;
+  --line: rgb(0 0 0 / 0.1);
+  --hover: rgb(0 0 0 / 0.06);
+  --press: rgb(0 0 0 / 0.11);
+
+  /* GNOME Shell surfaces (follow the style setting since Ubuntu 23.10) */
+  --shell: #fafafa;
+  --shell-fg: #2e2e2e;
+  --shell-card: rgb(0 0 0 / 0.06);
+  --shell-card-hover: rgb(0 0 0 / 0.1);
+  --panel: rgb(14 14 14 / 0.92);
+  --panel-fg: #f7f7f7;
+  --dock: rgb(26 26 26 / 0.78);
+
+  --radius: 0.75rem;
+
+  --background: var(--window);
+  --foreground: var(--fg);
+  --card: var(--view);
+  --card-foreground: var(--fg);
+  --popover: var(--view);
+  --popover-foreground: var(--fg);
+  --primary: var(--brand);
+  --primary-foreground: var(--brand-fg);
+  --secondary: #e6e6e6;
+  --secondary-foreground: var(--fg);
+  --muted: #e6e6e6;
+  --muted-foreground: var(--fg-dim);
+  --accent: var(--hover);
+  --accent-foreground: var(--fg);
+  --destructive: #c7162b;
+  --border: var(--line);
+  --input: rgb(0 0 0 / 0.14);
+  --ring: color-mix(in oklab, var(--brand) 55%, transparent);
+}
+
+.dark {
+  --window: #2c2c2c;
+  --headerbar: #303030;
+  --headerbar-backdrop: #2a2a2a;
+  --view: #242424;
+  --sidebar: #303030;
+  --fg: #f4f4f4;
+  --fg-dim: #b4b4b4;
+  --line: rgb(255 255 255 / 0.1);
+  --hover: rgb(255 255 255 / 0.07);
+  --press: rgb(255 255 255 / 0.13);
+
+  --shell: #2b2b2b;
+  --shell-fg: #f4f4f4;
+  --shell-card: rgb(255 255 255 / 0.08);
+  --shell-card-hover: rgb(255 255 255 / 0.13);
+
+  --popover: #353535;
+  --secondary: #3a3a3a;
+  --muted: #3a3a3a;
+  --input: rgb(255 255 255 / 0.16);
+  --destructive: #ff5c6c;
+}
+
+@theme inline {
+  --font-sans: "Montserrat Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Ubuntu Mono", ui-monospace, monospace;
+
+  --color-brand: var(--brand);
+  --color-brand-fg: var(--brand-fg);
+  --color-window: var(--window);
+  --color-headerbar: var(--headerbar);
+  --color-headerbar-backdrop: var(--headerbar-backdrop);
+  --color-view: var(--view);
+  --color-sidebar: var(--sidebar);
+  --color-fg: var(--fg);
+  --color-fg-dim: var(--fg-dim);
+  --color-line: var(--line);
+  --color-hover: var(--hover);
+  --color-press: var(--press);
+  --color-shell: var(--shell);
+  --color-shell-fg: var(--shell-fg);
+  --color-shell-card: var(--shell-card);
+  --color-shell-card-hover: var(--shell-card-hover);
+  --color-panel: var(--panel);
+  --color-panel-fg: var(--panel-fg);
+  --color-dock: var(--dock);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 2px);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-gnome: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  --animate-win-open: win-open 220ms var(--ease-out-expo) both;
+  --animate-win-close: win-close 200ms cubic-bezier(0.4, 0, 1, 1) both;
+  --animate-overview-in: overview-in 260ms var(--ease-out-expo) both;
+  --animate-banner-in: banner-in 320ms var(--ease-out-expo) both;
+  --animate-boot-dot: boot-dot 1.2s ease-in-out infinite;
+}
+
+/* individual scale/translate properties compose with the inline transform
+   that positions each window */
+@keyframes win-open {
+  from { opacity: 0; scale: 0.95; translate: 2.5% 2.5%; }
+  to { opacity: 1; scale: 1; translate: 0 0; }
+}
+/* macOS-style close: a quick shrink toward the window's centre while it
+   fades and softens (scale 0.88 from a top-left origin, recentred by 6%) */
+@keyframes win-close {
+  from { opacity: 1; scale: 1; translate: 0 0; filter: blur(0); }
+  to { opacity: 0; scale: 0.88; translate: 6% 6%; filter: blur(2px); }
+}
+@keyframes overview-in {
+  from { opacity: 0; transform: scale(1.04); filter: blur(6px); }
+  to { opacity: 1; transform: scale(1); filter: blur(0); }
+}
+@keyframes banner-in {
+  from { opacity: 0; transform: translateY(-14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes boot-dot {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 1; }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html, body, #root {
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    @apply bg-black font-sans text-foreground antialiased;
+    font-feature-settings: "tnum" 0;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--brand) 38%, transparent);
+    color: inherit;
+  }
+  input, textarea, [contenteditable="true"], .selectable {
+    user-select: text;
+    caret-color: var(--brand);
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+  a {
+    text-underline-offset: 3px;
+  }
+  /* Yaru overlay scrollbars */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in oklab, var(--fg) 30%, transparent) transparent;
+  }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in oklab, var(--fg) 28%, transparent);
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: color-mix(in oklab, var(--fg) 45%, transparent);
+  }
+}
+
+@layer utilities {
+  .tabular { font-variant-numeric: tabular-nums; }
+  .no-anim *, .no-anim *::before, .no-anim *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Ptyxis-like terminal palette, follows the desktop style */
+.terminal {
+  --t-bg: #fafafa;
+  --t-fg: #2e2e2e;
+  --t-green: #26831b;
+  --t-blue: #1a5fb4;
+  --t-red: #c01c28;
+  --t-accent: var(--brand);
+}
+.dark .terminal {
+  --t-bg: #1d1d1d;
+  --t-fg: #eeeeec;
+  --t-green: #8ae234;
+  --t-blue: #8cb5f0;
+  --t-red: #ff7b7b;
+  --t-accent: color-mix(in oklab, var(--brand) 75%, white);
+}
+
+/* sun corona + halo (Sky.tsx) */
+@keyframes sun-spin {
+  to { rotate: 360deg; }
+}
+@keyframes sun-breathe {
+  0%, 100% { opacity: 0.85; scale: 1; }
+  50% { opacity: 1; scale: 1.06; }
+}
+
+/* Ubuntu (Yaru-style) cursors from public/cursors: black glyphs, white outline, soft shadow */
+:root {
+  --cursor-default: url("/cursors/default.svg") 5 3, default;
+  --cursor-pointer: url("/cursors/pointer.svg") 14 3, pointer;
+  --cursor-text: url("/cursors/text.svg") 16 16, text;
+  --cursor-grab: url("/cursors/grab.svg") 16 14, grab;
+  --cursor-grabbing: url("/cursors/grabbing.svg") 16 16, grabbing;
+  --cursor-not-allowed: url("/cursors/not-allowed.svg") 5 3, not-allowed;
+  --cursor-ew-resize: url("/cursors/ew-resize.svg") 16 16, ew-resize;
+  --cursor-ns-resize: url("/cursors/ns-resize.svg") 16 16, ns-resize;
+  --cursor-nwse-resize: url("/cursors/nwse-resize.svg") 16 16, nwse-resize;
+  --cursor-nesw-resize: url("/cursors/nesw-resize.svg") 16 16, nesw-resize;
+}
+@media (pointer: fine) {
+  html, .cursor-default {
+    cursor: var(--cursor-default);
+  }
+  html *:not(input, textarea, [contenteditable="true"], [class*="cursor-"]) {
+    cursor: inherit;
+  }
+  input, textarea, [contenteditable="true"], .cursor-text {
+    cursor: var(--cursor-text);
+  }
+  /* anything clickable gets the hand; html prefix + attribute outranks the inherit rule */
+  html :is(
+    a[href], button, summary, select, label[for], .cursor-pointer,
+    input:is([type="button"], [type="submit"], [type="reset"], [type="checkbox"], [type="radio"], [type="range"], [type="color"], [type="file"]),
+    [role="button"], [role="link"], [role="tab"], [role="menuitem"], [role="menuitemcheckbox"], [role="menuitemradio"],
+    [role="option"], [role="switch"], [role="checkbox"], [role="radio"], [role="treeitem"]
+  ) {
+    cursor: var(--cursor-pointer);
+  }
+  /* `body` matches the specificity of the input:is(...) branch above, so this wins by order */
+  html body :is(:disabled, [aria-disabled="true"], [data-disabled]) {
+    cursor: var(--cursor-not-allowed);
+  }
+  .cursor-not-allowed, [class*="cursor-not-allowed"]:disabled {
+    cursor: var(--cursor-not-allowed);
+  }
+  .cursor-e-resize, .cursor-w-resize { cursor: var(--cursor-ew-resize); }
+  .cursor-n-resize, .cursor-s-resize { cursor: var(--cursor-ns-resize); }
+  .cursor-nw-resize, .cursor-se-resize { cursor: var(--cursor-nwse-resize); }
+  .cursor-ne-resize, .cursor-sw-resize { cursor: var(--cursor-nesw-resize); }
+}
+
+/* boot launch sequence (BootScreen.tsx) */
+@keyframes rocket-idle {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -3px; }
+}
+@keyframes plume {
+  0% { scale: 1 1; opacity: 1; }
+  100% { scale: 1.25 0.85; opacity: 0.85; }
+}
+
+/* GitHub Stats: calendar columns fade in oldest week first; language words settle in */
+@keyframes gh-cell {
+  from { opacity: 0; }
+}
+.gh-cell {
+  animation: gh-cell 400ms ease-out both;
+  animation-delay: calc(var(--c) * 9ms);
+}
+.gh-dot {
+  animation: gh-cell 400ms ease-out both;
+  animation-delay: calc(150ms + var(--k) * 4ms);
+}
+.no-anim :is(.gh-cell, .gh-dot) { animation-delay: 0s; }
+@media (prefers-reduced-motion: reduce) {
+  :is(.gh-cell, .gh-dot) { animation-delay: 0s; }
+}
+
+/* GitHub Stats contribution scale. Built from the live accent's hue at fixed
+   lightness steps (with a chroma floor), so all ten Yaru accents — including the
+   muted bark and sage — keep the same level-to-level contrast in both styles. */
+:root {
+  --gh-0: color-mix(in oklab, var(--fg) 13%, transparent);
+  --gh-1: color-mix(in oklab, var(--brand) 30%, var(--view));
+  --gh-2: color-mix(in oklab, var(--brand) 55%, var(--view));
+  --gh-3: color-mix(in oklab, var(--brand) 78%, var(--view));
+  --gh-4: var(--brand);
+}
+@supports (color: oklch(from red l c h)) {
+  :root {
+    --gh-1: oklch(from var(--brand) 0.85 max(c, 0.07) h);
+    --gh-2: oklch(from var(--brand) 0.72 max(c, 0.1) h);
+    --gh-3: oklch(from var(--brand) 0.59 max(c, 0.12) h);
+    --gh-4: oklch(from var(--brand) 0.46 max(c, 0.13) h);
+  }
+  .dark {
+    --gh-1: oklch(from var(--brand) 0.42 max(c, 0.06) h);
+    --gh-2: oklch(from var(--brand) 0.55 max(c, 0.09) h);
+    --gh-3: oklch(from var(--brand) 0.69 max(c, 0.12) h);
+    --gh-4: oklch(from var(--brand) 0.83 max(c, 0.13) h);
+  }
+}
+.dark { --gh-0: color-mix(in oklab, var(--fg) 15%, transparent); }
+
+/* Language dots use GitHub's linguist colours; dark style lifts the dark ones (PHP, CSS) off the surface */
+.gh-lang { fill: var(--lang); }
+@supports (color: oklch(from red l c h)) {
+  .dark .gh-lang { fill: oklch(from var(--lang) max(l, 0.64) c h); }
+}

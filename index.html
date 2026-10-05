@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0e0e0e" />
+    <meta name="description" content="Jowie Trence Jurado's portfolio — an Ubuntu-style desktop in the browser. Open apps to explore projects, experience and more." />
+    <title>Jowie Trence Jurado — Portfolio</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      // Apply theme + accent before first paint (no flash)
+      try {
+        var s = JSON.parse(localStorage.getItem('jowie-os') || '{}').state || {}
+        var st = s.settings || {}
+        var dark = st.theme === 'dark' || (st.theme !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches)
+        if (dark) document.documentElement.classList.add('dark')
+        var accents = { orange: '#e95420', bark: '#787859', sage: '#657b69', olive: '#4b8501', viridian: '#03875b', prussian: '#308280', blue: '#0073e5', purple: '#7764d8', magenta: '#b34cb3', red: '#da3450' }
+        if (st.accent && accents[st.accent]) document.documentElement.style.setProperty('--brand', accents[st.accent])
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

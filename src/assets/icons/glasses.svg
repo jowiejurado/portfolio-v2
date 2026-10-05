@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Experience: reading glasses on a light Yaru-style badge (original artwork) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e3e1dc"/>
+    </linearGradient>
+    <linearGradient id="lens" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cfe4f3"/>
+      <stop offset="1" stop-color="#8fb8d8"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <circle cx="128" cy="128" r="112" fill="url(#bg)" filter="url(#sh)"/>
+  <circle cx="128" cy="128" r="111" fill="none" stroke="#000" stroke-opacity="0.08" stroke-width="2"/>
+  <!-- temples -->
+  <path d="M30 112 C42 98 56 94 64 96" fill="none" stroke="#2b2b2b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M226 112 C214 98 200 94 192 96" fill="none" stroke="#2b2b2b" stroke-width="10" stroke-linecap="round"/>
+  <!-- lenses -->
+  <rect x="44" y="102" width="74" height="58" rx="22" fill="url(#lens)" stroke="#2b2b2b" stroke-width="12"/>
+  <rect x="138" y="102" width="74" height="58" rx="22" fill="url(#lens)" stroke="#2b2b2b" stroke-width="12"/>
+  <!-- bridge -->
+  <path d="M116 116 C122 106 134 106 140 116" fill="none" stroke="#2b2b2b" stroke-width="10" stroke-linecap="round"/>
+  <!-- reflections -->
+  <path d="M60 120 L78 112" stroke="#ffffff" stroke-opacity="0.9" stroke-width="7" stroke-linecap="round"/>
+  <path d="M154 120 L172 112" stroke="#ffffff" stroke-opacity="0.9" stroke-width="7" stroke-linecap="round"/>
+</svg>

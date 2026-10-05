@@ -1,0 +1,890 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-03T09:44:54.378Z",
+  "title": "Design System: Jowie Trence Jurado — Portfolio Desktop",
+  "extensions": {
+    "colorMeta": {
+      "brand-orange": {
+        "role": "primary",
+        "displayName": "Ubuntu Orange (live accent default)",
+        "canonical": "#e95420",
+        "oklch": "oklch(64.1% 0.194 37.8)",
+        "tonalRamp": [
+          "oklch(15% 0.116 37.8)",
+          "oklch(25% 0.194 37.8)",
+          "oklch(35% 0.194 37.8)",
+          "oklch(45% 0.194 37.8)",
+          "oklch(55% 0.194 37.8)",
+          "oklch(70% 0.194 37.8)",
+          "oklch(85% 0.194 37.8)",
+          "oklch(95% 0.068 37.8)"
+        ]
+      },
+      "accent-bark": {
+        "role": "primary",
+        "displayName": "Bark",
+        "canonical": "#787859",
+        "oklch": "oklch(56.4% 0.045 107.8)",
+        "tonalRamp": [
+          "oklch(15% 0.027 107.8)",
+          "oklch(25% 0.045 107.8)",
+          "oklch(35% 0.045 107.8)",
+          "oklch(45% 0.045 107.8)",
+          "oklch(55% 0.045 107.8)",
+          "oklch(70% 0.045 107.8)",
+          "oklch(85% 0.045 107.8)",
+          "oklch(95% 0.016 107.8)"
+        ]
+      },
+      "accent-sage": {
+        "role": "primary",
+        "displayName": "Sage",
+        "canonical": "#657b69",
+        "oklch": "oklch(56.0% 0.038 150.3)",
+        "tonalRamp": [
+          "oklch(15% 0.023 150.3)",
+          "oklch(25% 0.038 150.3)",
+          "oklch(35% 0.038 150.3)",
+          "oklch(45% 0.038 150.3)",
+          "oklch(55% 0.038 150.3)",
+          "oklch(70% 0.038 150.3)",
+          "oklch(85% 0.038 150.3)",
+          "oklch(95% 0.013 150.3)"
+        ]
+      },
+      "accent-olive": {
+        "role": "primary",
+        "displayName": "Olive",
+        "canonical": "#4b8501",
+        "oklch": "oklch(55.5% 0.157 133.2)",
+        "tonalRamp": [
+          "oklch(15% 0.094 133.2)",
+          "oklch(25% 0.157 133.2)",
+          "oklch(35% 0.157 133.2)",
+          "oklch(45% 0.157 133.2)",
+          "oklch(55% 0.157 133.2)",
+          "oklch(70% 0.157 133.2)",
+          "oklch(85% 0.157 133.2)",
+          "oklch(95% 0.055 133.2)"
+        ]
+      },
+      "accent-viridian": {
+        "role": "primary",
+        "displayName": "Viridian",
+        "canonical": "#03875b",
+        "oklch": "oklch(55.1% 0.121 161.6)",
+        "tonalRamp": [
+          "oklch(15% 0.073 161.6)",
+          "oklch(25% 0.121 161.6)",
+          "oklch(35% 0.121 161.6)",
+          "oklch(45% 0.121 161.6)",
+          "oklch(55% 0.121 161.6)",
+          "oklch(70% 0.121 161.6)",
+          "oklch(85% 0.121 161.6)",
+          "oklch(95% 0.042 161.6)"
+        ]
+      },
+      "accent-prussian": {
+        "role": "primary",
+        "displayName": "Prussian Green",
+        "canonical": "#308280",
+        "oklch": "oklch(55.7% 0.078 192.9)",
+        "tonalRamp": [
+          "oklch(15% 0.047 192.9)",
+          "oklch(25% 0.078 192.9)",
+          "oklch(35% 0.078 192.9)",
+          "oklch(45% 0.078 192.9)",
+          "oklch(55% 0.078 192.9)",
+          "oklch(70% 0.078 192.9)",
+          "oklch(85% 0.078 192.9)",
+          "oklch(95% 0.027 192.9)"
+        ]
+      },
+      "accent-blue": {
+        "role": "primary",
+        "displayName": "Yaru Blue",
+        "canonical": "#0073e5",
+        "oklch": "oklch(56.9% 0.194 255.9)",
+        "tonalRamp": [
+          "oklch(15% 0.116 255.9)",
+          "oklch(25% 0.194 255.9)",
+          "oklch(35% 0.194 255.9)",
+          "oklch(45% 0.194 255.9)",
+          "oklch(55% 0.194 255.9)",
+          "oklch(70% 0.194 255.9)",
+          "oklch(85% 0.194 255.9)",
+          "oklch(95% 0.068 255.9)"
+        ]
+      },
+      "accent-purple": {
+        "role": "primary",
+        "displayName": "Yaru Purple",
+        "canonical": "#7764d8",
+        "oklch": "oklch(57.9% 0.171 287.3)",
+        "tonalRamp": [
+          "oklch(15% 0.103 287.3)",
+          "oklch(25% 0.171 287.3)",
+          "oklch(35% 0.171 287.3)",
+          "oklch(45% 0.171 287.3)",
+          "oklch(55% 0.171 287.3)",
+          "oklch(70% 0.171 287.3)",
+          "oklch(85% 0.171 287.3)",
+          "oklch(95% 0.060 287.3)"
+        ]
+      },
+      "accent-magenta": {
+        "role": "primary",
+        "displayName": "Magenta",
+        "canonical": "#b34cb3",
+        "oklch": "oklch(58.8% 0.183 327.6)",
+        "tonalRamp": [
+          "oklch(15% 0.110 327.6)",
+          "oklch(25% 0.183 327.6)",
+          "oklch(35% 0.183 327.6)",
+          "oklch(45% 0.183 327.6)",
+          "oklch(55% 0.183 327.6)",
+          "oklch(70% 0.183 327.6)",
+          "oklch(85% 0.183 327.6)",
+          "oklch(95% 0.064 327.6)"
+        ]
+      },
+      "accent-red": {
+        "role": "primary",
+        "displayName": "Yaru Red",
+        "canonical": "#da3450",
+        "oklch": "oklch(58.9% 0.201 17.0)",
+        "tonalRamp": [
+          "oklch(15% 0.120 17.0)",
+          "oklch(25% 0.201 17.0)",
+          "oklch(35% 0.201 17.0)",
+          "oklch(45% 0.201 17.0)",
+          "oklch(55% 0.201 17.0)",
+          "oklch(70% 0.201 17.0)",
+          "oklch(85% 0.201 17.0)",
+          "oklch(95% 0.070 17.0)"
+        ]
+      },
+      "brand-fg": {
+        "role": "neutral",
+        "displayName": "Brand Foreground",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "window": {
+        "role": "neutral",
+        "displayName": "Window",
+        "canonical": "#fafafa",
+        "oklch": "oklch(98.5% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "headerbar": {
+        "role": "neutral",
+        "displayName": "Headerbar",
+        "canonical": "#ebebeb",
+        "oklch": "oklch(94.0% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "headerbar-backdrop": {
+        "role": "neutral",
+        "displayName": "Headerbar Backdrop",
+        "canonical": "#f2f2f2",
+        "oklch": "oklch(96.1% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "view": {
+        "role": "neutral",
+        "displayName": "View",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "sidebar": {
+        "role": "neutral",
+        "displayName": "Sidebar",
+        "canonical": "#ebebeb",
+        "oklch": "oklch(94.0% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "fg": {
+        "role": "neutral",
+        "displayName": "Foreground",
+        "canonical": "#3d3d3d",
+        "oklch": "oklch(36.0% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "fg-dim": {
+        "role": "neutral",
+        "displayName": "Dim Foreground",
+        "canonical": "#6b6b6b",
+        "oklch": "oklch(52.8% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "secondary": {
+        "role": "neutral",
+        "displayName": "Secondary Fill",
+        "canonical": "#e6e6e6",
+        "oklch": "oklch(92.5% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "destructive": {
+        "role": "neutral",
+        "displayName": "Yaru Destructive Red",
+        "canonical": "#c7162b",
+        "oklch": "oklch(53.0% 0.204 23.6)",
+        "tonalRamp": [
+          "oklch(15% 0.123 23.6)",
+          "oklch(25% 0.204 23.6)",
+          "oklch(35% 0.204 23.6)",
+          "oklch(45% 0.204 23.6)",
+          "oklch(55% 0.204 23.6)",
+          "oklch(70% 0.204 23.6)",
+          "oklch(85% 0.204 23.6)",
+          "oklch(95% 0.072 23.6)"
+        ]
+      },
+      "window-dark": {
+        "role": "neutral",
+        "displayName": "Window (dark)",
+        "canonical": "#2c2c2c",
+        "oklch": "oklch(29.3% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "headerbar-dark": {
+        "role": "neutral",
+        "displayName": "Headerbar (dark)",
+        "canonical": "#303030",
+        "oklch": "oklch(30.9% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "headerbar-backdrop-dark": {
+        "role": "neutral",
+        "displayName": "Headerbar Backdrop (dark)",
+        "canonical": "#2a2a2a",
+        "oklch": "oklch(28.5% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "view-dark": {
+        "role": "neutral",
+        "displayName": "View (dark)",
+        "canonical": "#242424",
+        "oklch": "oklch(26.0% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "popover-dark": {
+        "role": "neutral",
+        "displayName": "Popover (dark)",
+        "canonical": "#353535",
+        "oklch": "oklch(32.9% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "fg-on-dark": {
+        "role": "neutral",
+        "displayName": "Foreground (dark)",
+        "canonical": "#f4f4f4",
+        "oklch": "oklch(96.7% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "fg-dim-on-dark": {
+        "role": "neutral",
+        "displayName": "Dim Foreground (dark)",
+        "canonical": "#b4b4b4",
+        "oklch": "oklch(77.0% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "secondary-dark": {
+        "role": "neutral",
+        "displayName": "Secondary Fill (dark)",
+        "canonical": "#3a3a3a",
+        "oklch": "oklch(34.8% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "destructive-dark": {
+        "role": "neutral",
+        "displayName": "Destructive (dark)",
+        "canonical": "#ff5c6c",
+        "oklch": "oklch(69.4% 0.198 18.3)",
+        "tonalRamp": [
+          "oklch(15% 0.119 18.3)",
+          "oklch(25% 0.198 18.3)",
+          "oklch(35% 0.198 18.3)",
+          "oklch(45% 0.198 18.3)",
+          "oklch(55% 0.198 18.3)",
+          "oklch(70% 0.198 18.3)",
+          "oklch(85% 0.198 18.3)",
+          "oklch(95% 0.069 18.3)"
+        ]
+      },
+      "shell": {
+        "role": "neutral",
+        "displayName": "Shell",
+        "canonical": "#fafafa",
+        "oklch": "oklch(98.5% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "shell-fg": {
+        "role": "neutral",
+        "displayName": "Shell Foreground",
+        "canonical": "#2e2e2e",
+        "oklch": "oklch(30.1% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "shell-dark": {
+        "role": "neutral",
+        "displayName": "Shell (dark)",
+        "canonical": "#2b2b2b",
+        "oklch": "oklch(28.9% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "panel-fg": {
+        "role": "neutral",
+        "displayName": "Panel Foreground",
+        "canonical": "#f7f7f7",
+        "oklch": "oklch(97.6% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(25% 0.000 89.9)",
+          "oklch(35% 0.000 89.9)",
+          "oklch(45% 0.000 89.9)",
+          "oklch(55% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(85% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line (hairline)",
+        "canonical": "rgb(0 0 0 / 0.1); dark rgb(255 255 255 / 0.1)"
+      },
+      "hover": {
+        "role": "neutral",
+        "displayName": "Hover Fill",
+        "canonical": "rgb(0 0 0 / 0.06); dark rgb(255 255 255 / 0.07)"
+      },
+      "press": {
+        "role": "neutral",
+        "displayName": "Press Fill",
+        "canonical": "rgb(0 0 0 / 0.11); dark rgb(255 255 255 / 0.13)"
+      },
+      "shell-card": {
+        "role": "neutral",
+        "displayName": "Shell Card",
+        "canonical": "rgb(0 0 0 / 0.06); dark rgb(255 255 255 / 0.08)"
+      },
+      "shell-card-hover": {
+        "role": "neutral",
+        "displayName": "Shell Card Hover",
+        "canonical": "rgb(0 0 0 / 0.1); dark rgb(255 255 255 / 0.13)"
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Top Bar Panel",
+        "canonical": "rgb(14 14 14 / 0.92), both styles"
+      },
+      "dock": {
+        "role": "neutral",
+        "displayName": "Dock",
+        "canonical": "rgb(26 26 26 / 0.78) + backdrop-blur-xl, both styles"
+      },
+      "tooltip": {
+        "role": "neutral",
+        "displayName": "Tooltip",
+        "canonical": "#1d1d1d at 95%, both styles"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Welcome hero and project hero names only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page title at the top of each app page."
+      },
+      "status-title": {
+        "displayName": "Status Title",
+        "purpose": "Adw status-page titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Headerbar window titles, group titles, button labels."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Row titles (500); paragraphs at 400 within a 720px clamp."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Quick toggles, app-grid labels, shell menu items."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Row subtitles and dim metadata."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Terminal output and inline literal code only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "window-focused",
+        "value": "0 18px 48px -8px rgb(0 0 0 / 0.42), 0 2px 6px rgb(0 0 0 / 0.18), 0 0 0 1px rgb(0 0 0 / 0.1)",
+        "purpose": "Focused window, light style."
+      },
+      {
+        "name": "window-dark",
+        "value": "0 18px 48px -8px rgb(0 0 0 / 0.6), 0 0 0 1px rgb(255 255 255 / 0.07)",
+        "purpose": "Windows in dark style."
+      },
+      {
+        "name": "window-backdrop",
+        "value": "0 8px 24px -6px rgb(0 0 0 / 0.28), 0 0 0 1px rgb(0 0 0 / 0.08)",
+        "purpose": "Unfocused windows, light style."
+      },
+      {
+        "name": "shell-popover",
+        "value": "0 12px 40px rgb(0 0 0 / 0.45)",
+        "purpose": "Quick settings and date menu."
+      },
+      {
+        "name": "banner",
+        "value": "0 10px 34px rgb(0 0 0 / 0.4)",
+        "purpose": "Notification banners."
+      },
+      {
+        "name": "boxed-list",
+        "value": "0 0 0 1px var(--line), 0 1px 3px rgb(0 0 0 / 0.05)",
+        "purpose": "Hairline ring with a whisper of lift."
+      },
+      {
+        "name": "tooltip",
+        "value": "0 4px 14px rgb(0 0 0 / 0.3)",
+        "purpose": "Tooltips."
+      },
+      {
+        "name": "knob",
+        "value": "0 1px 2px rgb(0 0 0 / 0.3)",
+        "purpose": "Switch thumbs and slider handles."
+      },
+      {
+        "name": "snap-preview",
+        "value": "0 10px 40px rgb(0 0 0 / 0.25)",
+        "purpose": "Translucent snap target while dragging a window."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Default easing for opening, settling and state changes."
+      },
+      {
+        "name": "ease-gnome",
+        "value": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+        "purpose": "Minimize flight to the dock icon (260ms)."
+      },
+      {
+        "name": "win-open",
+        "value": "220ms ease-out-expo; opacity 0 to 1, scale 0.95 to 1, translate 2.5% 2.5% to 0 (individual properties)",
+        "purpose": "Window open; composes with the inline positioning transform. Close reverses to scale 0.96, translate 2%."
+      },
+      {
+        "name": "overview-in",
+        "value": "260ms ease-out-expo; opacity, scale 1.04 to 1, blur 6px to 0",
+        "purpose": "App grid entrance."
+      },
+      {
+        "name": "banner-in",
+        "value": "320ms ease-out-expo; translateY -14px to 0",
+        "purpose": "Notification banner drop."
+      },
+      {
+        "name": "control",
+        "value": "150ms colour transitions; 200ms switch thumb",
+        "purpose": "Hover/press and toggle feedback."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation and transition durations 0.01ms",
+        "purpose": "Applied by prefers-reduced-motion: reduce and by the .no-anim root class (animations off or Power Saver)."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "max-width: 767px",
+        "purpose": "Dock moves to a 64px bottom bar; windows open maximized; resize handles hidden."
+      }
+    ],
+    "zIndex": [
+      {
+        "name": "windows",
+        "value": "10-8000"
+      },
+      {
+        "name": "snap-preview / app-grid",
+        "value": "9000"
+      },
+      {
+        "name": "dock",
+        "value": "9500"
+      },
+      {
+        "name": "top-bar",
+        "value": "10000"
+      },
+      {
+        "name": "banners",
+        "value": "12000"
+      },
+      {
+        "name": "overlays (popover, menu, dialog, tooltip)",
+        "value": "30000"
+      },
+      {
+        "name": "mobile-notice",
+        "value": "40000"
+      },
+      {
+        "name": "session (boot, lock, off)",
+        "value": "50000"
+      },
+      {
+        "name": "display-filters",
+        "value": "60000-60001"
+      }
+    ],
+    "accents": {
+      "source": "src/os/theme.ts",
+      "note": "Any one of the ten Yaru accents is written to --brand at runtime.",
+      "ids": [
+        "orange",
+        "bark",
+        "sage",
+        "olive",
+        "viridian",
+        "prussian",
+        "blue",
+        "purple",
+        "magenta",
+        "red"
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Window Chrome",
+      "kind": "custom",
+      "refersTo": "window-headerbar",
+      "description": "Yaru window: 46px headerbar with centred bold title and round title buttons; close turns the accent on hover.",
+      "html": "<section class=\"ds-win\"><header class=\"ds-win-hb\"><span></span><h2 class=\"ds-win-title\">Projects</h2><span class=\"ds-win-btns\"><button class=\"ds-tb\" aria-label=\"Minimize\"><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\"><path d=\"M4.5 11.5h7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/></svg></button><button class=\"ds-tb\" aria-label=\"Maximize\"><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\"><rect x=\"4.5\" y=\"4.5\" width=\"7\" height=\"7\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"/></svg></button><button class=\"ds-tb ds-tb-close\" aria-label=\"Close\"><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\"><path d=\"M5 5l6 6M11 5l-6 6\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/></svg></button></span></header><div class=\"ds-win-body\"></div></section>",
+      "css": ".ds-win{font-family:'Montserrat Variable',ui-sans-serif,system-ui,sans-serif;width:420px;border-radius:12px;background:var(--window,#fafafa);color:var(--fg,#3d3d3d);box-shadow:0 18px 48px -8px rgb(0 0 0/.42),0 2px 6px rgb(0 0 0/.18),0 0 0 1px rgb(0 0 0/.1);overflow:hidden}.ds-win-hb{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:46px;padding:0 8px;background:var(--headerbar,#ebebeb);border-bottom:1px solid var(--line,rgb(0 0 0/.1))}.ds-win-title{margin:0;font-size:14px;font-weight:700}.ds-win-btns{display:flex;justify-content:flex-end;gap:12px;padding-right:4px}.ds-tb{display:grid;place-items:center;width:24px;height:24px;border:0;border-radius:9999px;background:rgb(61 61 61/.09);color:inherit;cursor:pointer;transition:background-color 150ms}.ds-tb:hover{background:rgb(61 61 61/.16)}.ds-tb:active{background:rgb(61 61 61/.24)}.ds-tb-close:hover{background:var(--brand,#e95420);color:var(--brand-fg,#fff)}.ds-tb:focus-visible{outline:2px solid color-mix(in oklab,var(--brand,#e95420) 55%,transparent);outline-offset:2px}.ds-win-body{height:120px}"
+    },
+    {
+      "name": "Suggested Button",
+      "kind": "button",
+      "refersTo": "button-suggested",
+      "description": "Adw suggested-action: the one accent-filled primary action per view.",
+      "html": "<button class=\"ds-btn-s\">Send Message</button>",
+      "css": ".ds-btn-s{font-family:'Montserrat Variable',ui-sans-serif,system-ui,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:8px;height:36px;padding:0 16px;border:0;border-radius:12px;font-size:14px;font-weight:700;background:var(--brand,#e95420);color:var(--brand-fg,#fff);cursor:pointer;transition:filter 150ms}.ds-btn-s:hover{filter:brightness(1.1)}.ds-btn-s:active{filter:brightness(.95)}.ds-btn-s:focus-visible{outline:2px solid color-mix(in oklab,var(--brand,#e95420) 55%,transparent);outline-offset:2px}"
+    },
+    {
+      "name": "Default Button",
+      "kind": "button",
+      "refersTo": "button-default",
+      "description": "Adw default button: translucent foreground fill.",
+      "html": "<button class=\"ds-btn-d\">Copy Email</button>",
+      "css": ".ds-btn-d{font-family:'Montserrat Variable',ui-sans-serif,system-ui,sans-serif;height:36px;padding:0 16px;border:0;border-radius:12px;font-size:14px;font-weight:700;color:var(--fg,#3d3d3d);background:rgb(61 61 61/.08);cursor:pointer;transition:background-color 150ms}.ds-btn-d:hover{background:rgb(61 61 61/.13)}.ds-btn-d:active{background:rgb(61 61 61/.19)}.ds-btn-d:focus-visible{outline:2px solid color-mix(in oklab,var(--brand,#e95420) 55%,transparent);outline-offset:2px}"
+    },
+    {
+      "name": "Boxed List",
+      "kind": "card",
+      "refersTo": "boxed-list",
+      "description": "Adw boxed list of rows divided by hairlines; the main container inside apps.",
+      "html": "<div class=\"ds-bl\"><button class=\"ds-row\"><span class=\"ds-row-t\">Network</span><span class=\"ds-row-s\">Connected, 5 GHz</span></button><button class=\"ds-row\"><span class=\"ds-row-t\">Appearance</span><span class=\"ds-row-s\">Dark style, orange accent</span></button></div>",
+      "css": ".ds-bl{font-family:'Montserrat Variable',ui-sans-serif,system-ui,sans-serif;width:360px;border-radius:14px;overflow:hidden;background:var(--view,#fff);color:var(--fg,#3d3d3d);box-shadow:0 0 0 1px var(--line,rgb(0 0 0/.1)),0 1px 3px rgb(0 0 0/.05)}.ds-row{display:flex;flex-direction:column;justify-content:center;width:100%;min-height:54px;padding:10px 16px;border:0;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer;transition:background-color 150ms}.ds-row+.ds-row{border-top:1px solid var(--line,rgb(0 0 0/.1))}.ds-row:hover{background:var(--hover,rgb(0 0 0/.06))}.ds-row:active{background:var(--press,rgb(0 0 0/.11))}.ds-row:focus-visible{outline:2px solid color-mix(in oklab,var(--brand,#e95420) 55%,transparent);outline-offset:-2px}.ds-row-t{font-size:14.5px;font-weight:500}.ds-row-s{margin-top:2px;font-size:13px;color:var(--fg-dim,#6b6b6b)}"
+    },
+    {
+      "name": "Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Metadata chip for tech stacks.",
+      "html": "<span class=\"ds-tag\">React</span> <span class=\"ds-tag\">TypeScript</span>",
+      "css": ".ds-tag{font-family:'Montserrat Variable',ui-sans-serif,system-ui,sans-serif;display:inline-flex;align-items:center;height:24px;padding:0 8px;border-radius:8px;background:rgb(61 61 61/.07);color:var(--fg,#3d3d3d);font-size:12px;font-weight:600}"
+    },
+    {
+      "name": "Quick Toggle",
+      "kind": "custom",
+      "refersTo": "quick-toggle-active",
+      "description": "GNOME quick-settings pill inside a 24px-radius shell popover; accent-filled when on.",
+      "html": "<div class=\"ds-qs\"><div class=\"ds-qt ds-qt-on\"><button class=\"ds-qt-main\" role=\"switch\" aria-checked=\"true\"><svg viewBox=\"0 0 20 20\" width=\"18\" height=\"18\" fill=\"currentColor\"><circle cx=\"10\" cy=\"15\" r=\"1.6\"/><path d=\"M5.6 12.4a6.2 6.2 0 0 1 8.8 0l1.1-1.1a7.8 7.8 0 0 0-11 0Zm-2.8-2.8a10.2 10.2 0 0 1 14.4 0l1.1-1.1a11.8 11.8 0 0 0-16.6 0Z\"/></svg><span><b>Wi-Fi</b><small>Home 5G</small></span></button></div><div class=\"ds-qt\"><button class=\"ds-qt-main\" role=\"switch\" aria-checked=\"false\"><svg viewBox=\"0 0 20 20\" width=\"18\" height=\"18\" fill=\"currentColor\"><circle cx=\"10\" cy=\"10\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><path d=\"M10 3a7 7 0 0 1 0 14Z\"/></svg><span><b>Dark Style</b></span></button></div></div>",
+      "css": ".ds-qs{font-family:'Montserrat Variable',ui-sans-serif,system-ui,sans-serif;display:grid;grid-template-columns:1fr 1fr;gap:10px;width:380px;padding:12px;border-radius:24px;background:var(--shell,#fafafa);color:var(--shell-fg,#2e2e2e);box-shadow:0 12px 40px rgb(0 0 0/.45)}.ds-qt{display:flex;height:52px;border-radius:9999px;overflow:hidden;background:var(--shell-card,rgb(0 0 0/.06));transition:background-color 150ms}.ds-qt-on{background:var(--brand,#e95420);color:var(--brand-fg,#fff)}.ds-qt-main{display:flex;flex:1;align-items:center;gap:10px;padding:0 8px 0 16px;border:0;border-radius:9999px;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer}.ds-qt-main:hover{background:var(--shell-card-hover,rgb(0 0 0/.1))}.ds-qt-on .ds-qt-main:hover{background:rgb(255 255 255/.12)}.ds-qt-main:focus-visible{outline:2px solid color-mix(in oklab,var(--brand,#e95420) 55%,transparent);outline-offset:2px}.ds-qt-main b{display:block;font-size:13.5px;font-weight:700}.ds-qt-main small{display:block;font-size:12px;opacity:.8}"
+    },
+    {
+      "name": "Switch",
+      "kind": "input",
+      "refersTo": "switch-checked",
+      "description": "Adw switch: accent track when on, white knob on expo-out.",
+      "html": "<button class=\"ds-sw\" role=\"switch\" aria-checked=\"true\" aria-label=\"Enabled\"><span class=\"ds-sw-k\"></span></button> <button class=\"ds-sw\" role=\"switch\" aria-checked=\"false\" aria-label=\"Disabled\"><span class=\"ds-sw-k\"></span></button>",
+      "css": ".ds-sw{display:inline-flex;align-items:center;width:48px;height:26px;padding:3px;border:0;border-radius:9999px;background:rgb(61 61 61/.2);cursor:pointer;transition:background-color 200ms}.ds-sw[aria-checked=true]{background:var(--brand,#e95420)}.ds-sw-k{width:20px;height:20px;border-radius:9999px;background:#fff;box-shadow:0 1px 2px rgb(0 0 0/.3);transition:transform 200ms cubic-bezier(.16,1,.3,1)}.ds-sw[aria-checked=true] .ds-sw-k{transform:translateX(22px)}.ds-sw:focus-visible{outline:2px solid color-mix(in oklab,var(--brand,#e95420) 55%,transparent);outline-offset:2px}"
+    },
+    {
+      "name": "Top Bar",
+      "kind": "nav",
+      "refersTo": "top-bar",
+      "description": "GNOME top bar: near-black translucent panel with pill buttons.",
+      "html": "<header class=\"ds-tbar\"><button class=\"ds-pb\" aria-label=\"Activities\"><span class=\"ds-ws ds-ws-on\"></span><span class=\"ds-ws\"></span></button><button class=\"ds-pb ds-clock\">Sat, Oct 3  5:39 PM</button><button class=\"ds-pb\" aria-label=\"System menu\"><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"currentColor\"><path d=\"M2 6h1.5v4H2zM5 5h1.5v6H5zM8 4h1.5v8H8zM11 3h1.5v10H11z\"/></svg></button></header>",
+      "css": ".ds-tbar{font-family:'Montserrat Variable',ui-sans-serif,system-ui,sans-serif;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:32px;padding:0 4px;background:var(--panel,rgb(14 14 14/.92));color:var(--panel-fg,#f7f7f7)}.ds-tbar>.ds-pb:first-child{justify-self:start}.ds-tbar>.ds-pb:last-child{justify-self:end}.ds-pb{display:flex;align-items:center;gap:5px;height:26px;padding:0 12px;border:0;border-radius:9999px;background:none;color:inherit;font:inherit;cursor:pointer;transition:background-color 150ms}.ds-pb:hover{background:rgb(255 255 255/.15)}.ds-pb:active{background:rgb(255 255 255/.25)}.ds-pb:focus-visible{outline:2px solid color-mix(in oklab,var(--brand,#e95420) 55%,transparent)}.ds-clock{font-size:14px;font-weight:600;font-variant-numeric:tabular-nums;white-space:pre}.ds-ws{height:7px;width:7px;border-radius:9999px;background:rgb(247 247 247/.5)}.ds-ws-on{width:22px;background:#f7f7f7}"
+    },
+    {
+      "name": "Dock with Suru Icons",
+      "kind": "nav",
+      "refersTo": "dock-item",
+      "description": "Translucent dark dock; 54px items holding Suru squircle app icons and running dots.",
+      "html": "<nav class=\"ds-dock\"><button class=\"ds-di ds-di-f\" aria-label=\"Contact\"><svg viewBox=\"0 0 48 48\" width=\"44\" height=\"44\"><defs><clipPath id=\"ds-sq\"><path d=\"M24 3c13.3 0 21 4.4 21 21s-7.7 21-21 21S3 37.3 3 24 10.7 3 24 3Z\"/></clipPath><linearGradient id=\"ds-hl\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop offset=\"0\" stop-color=\"#fff\" stop-opacity=\".22\"/><stop offset=\".5\" stop-color=\"#fff\" stop-opacity=\"0\"/></linearGradient></defs><g clip-path=\"url(#ds-sq)\"><rect width=\"48\" height=\"48\" style=\"fill:var(--brand,#e95420)\"/><path d=\"M48 10 10 48h38Z\" opacity=\".13\"/><rect width=\"48\" height=\"48\" fill=\"url(#ds-hl)\"/></g><path d=\"M24 3.5c13 0 20.5 4.3 20.5 20.5S37 44.5 24 44.5 3.5 37 3.5 24 11 3.5 24 3.5Z\" fill=\"none\" stroke=\"#000\" stroke-opacity=\".12\"/><path d=\"M14 18h20v13H14z\" fill=\"#fff\"/><path d=\"M14 18l10 7 10-7\" fill=\"none\" style=\"stroke:var(--brand,#e95420)\" stroke-width=\"1.6\"/></svg><span class=\"ds-dot\"></span></button><button class=\"ds-di\" aria-label=\"Terminal\"><svg viewBox=\"0 0 48 48\" width=\"44\" height=\"44\"><g clip-path=\"url(#ds-sq)\"><rect width=\"48\" height=\"48\" fill=\"#262626\"/><path d=\"M48 10 10 48h38Z\" opacity=\".13\"/><rect width=\"48\" height=\"48\" fill=\"url(#ds-hl)\"/></g><path d=\"M16 19l5 5-5 5M24 30h8\" stroke=\"#fff\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/></svg></button></nav>",
+      "css": ".ds-dock{display:flex;flex-direction:column;align-items:center;gap:4px;width:68px;padding:8px 0;background:var(--dock,rgb(26 26 26/.78));backdrop-filter:blur(24px)}.ds-di{position:relative;display:grid;place-items:center;width:54px;height:54px;border:0;border-radius:14px;background:none;cursor:pointer;transition:background-color 150ms}.ds-di svg{filter:drop-shadow(0 1px 1.5px rgb(0 0 0/.35));transition:transform 150ms}.ds-di:hover{background:rgb(255 255 255/.12)}.ds-di:active{background:rgb(255 255 255/.2)}.ds-di:active svg{transform:scale(.9)}.ds-di-f{background:rgb(255 255 255/.1)}.ds-di:focus-visible{outline:2px solid color-mix(in oklab,var(--brand,#e95420) 55%,transparent)}.ds-dot{position:absolute;left:1px;top:50%;width:5px;height:5px;margin-top:-2.5px;border-radius:9999px;background:var(--brand,#e95420)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Faithful Desktop",
+    "overview": "This portfolio desktop is not styled after Ubuntu; it is Ubuntu 26.04's Yaru look rebuilt in the browser, and the fidelity itself is the portfolio piece. Every surface answers to a GNOME or libadwaita original: the near-black top bar, the translucent left dock, the 46px headerbar with round title buttons, boxed lists, pill quick toggles, the Show Apps grid. Content lives in windows you open, never on a scrolling page.\n\nThe system is two-layered. The **shell** (top bar, dock, app grid, popovers, banners, session screens) floats over a full-bleed wallpaper with dark translucency and large soft radii. The **apps** sit inside windows on flat Yaru neutrals with hairline separators. One colour connects them: the live accent `--brand`, chosen by the visitor from Yaru's ten accents, which recolours wallpaper, suggested actions, toggles, switches, sliders, focus rings, selection and the close button on hover.\n\nDensity is desktop density: 13 to 15px text, 34 to 54px hit targets, 8 to 16px gaps. Light and dark styles are both first-class and swap the whole neutral set, shell included.",
+    "keyCharacteristics": [
+      "Faithful Ubuntu 26.04 / Yaru chrome, light and dark.",
+      "One live accent (`--brand`) out of ten Yaru colours; everything else neutral.",
+      "Montserrat everywhere; Ubuntu Mono only for terminal output and literal code.",
+      "Shell surfaces translucent and dark; app surfaces flat and tonal.",
+      "Suru squircle app icons and procedural, accent-painted wallpapers.",
+      "Expo-out motion that disappears entirely under reduced motion or Power Saver."
+    ],
+    "rules": [
+      {
+        "name": "The One Accent Rule",
+        "body": "`--brand` is the only saturated UI colour. Anything that signals \"selected\", \"on\", \"primary\" or \"focused\" uses it; nothing else invents a second accent. Change the accent, and every such state must follow.",
+        "section": "colors"
+      },
+      {
+        "name": "The Neutral Accent Rule",
+        "body": "shadcn's `accent` token is a neutral hover fill, not the brand. Never map `accent` to `--brand`; use `brand` / `primary` for the colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Montserrat is the only UI face. Ubuntu Mono appears only where text is literally code or terminal output.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Clock Rule",
+        "body": "Clocks, countdowns, battery percent and stats use tabular figures (`.tabular`) so digits never jitter.",
+        "section": "typography"
+      },
+      {
+        "name": "The Focus Lifts Rule",
+        "body": "Only the focused window carries the deep shadow and the full headerbar tone; every other window sinks to the backdrop shadow, backdrop headerbar and dimmed title.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Suru Squircle",
+        "body": "App icons are a superellipse (`M24 3c13.3 0 21 4.4 21 21s-7.7 21-21 21S3 37.3 3 24 10.7 3 24 3Z` on a 48 grid) filled with the app's tile colour, a diagonal fold (`M48 10 10 48h38Z` at 13% black), a top highlight gradient, a 12% black outline and a 1px drop shadow, with a solid Heroicons glyph at 52% of the tile.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** route every \"on / selected / primary / focused\" state through `--brand` so the accent switch recolours it.",
+      "**Do** keep window chrome exact: 46px headerbar, 12px radius, 24px round title buttons, close turning `--brand` on hover.",
+      "**Do** build app UI from the `_ui.tsx` libadwaita primitives and portal headerbar content through `HeaderBar`.",
+      "**Do** use shell tokens (shell, shell-card, panel, dock) for anything that floats over the desktop, and window tokens for anything inside a window.",
+      "**Do** take a z-index from the fixed stacking ladder in Layout.",
+      "**Do** honour reduced motion and Power Saver: every new animation must collapse under `.no-anim` and the media query.",
+      "**Do** use Heroicons (solid) for app and UI icons, with custom SVG glyphs only where GNOME has no Heroicons equivalent."
+    ],
+    "donts": [
+      "**Don't** map shadcn's `accent` token to the brand; it is the neutral hover fill.",
+      "**Don't** introduce a second saturated UI colour or a font other than Montserrat (Ubuntu Mono is for code only).",
+      "**Don't** use raster wallpapers or heavy image assets; wallpapers are procedural SVG painted with the accent.",
+      "**Don't** give a window its own drawn headerbar or title buttons; the shell owns window chrome.",
+      "**Don't** animate a window with `transform`; use the individual `scale` and `translate` properties so the positioning transform survives."
+    ]
+  }
+}
